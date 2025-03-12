@@ -5,12 +5,12 @@
 }
 
 :root {
-    --p1: #000;
-    --p2: #666;
-    --p3: #ccc;
-    --p4: #fff;
-    --pt1: rgba(0, 0, 0, 0.3);
-    --pt2: rgba(0, 0, 0, 0.7);
+    --p1: #FFCEFF;
+    --p2: #ADCDFF;
+    --p3: #FFFFD1;
+    --p4: #FBE4FF;
+    --pt1: #C9E7DB;
+    --pt2: #F8D7E5;
 }
 
 body {
@@ -36,7 +36,7 @@ footer {
 
 main {
     width: 100%;
-    height: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -84,11 +84,25 @@ main {
         flex-direction: column;
         align-items: center;
         gap:10px;
-        background-color: var(--p3);
+        background-color: var(--p2);
         color: var(--p1);
         padding: 10px;
         border-radius: 10px;
 
+        & div{
+            display: flex;
+            flex-direction: row;
+
+        & button{
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: var(--pt1) ;
+            color: var(--p3);
+            box-shadow: 0 0 5px ;
+            cursor: pointer;
+           }
+        }
     }
 }
 
